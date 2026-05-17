@@ -3,7 +3,13 @@ import Scene from './Scene'
 
 export default function HeroSection() {
   return (
-    <section className="h-screen relative overflow-hidden bg-black bg-[url('/bg-gradient.png')] bg-cover bg-top bg-no-repeat">
+    <section className="h-screen relative bg-black">
+      {/* Background overlay — extends below the section for a seamless fade */}
+      <div
+        className="absolute inset-x-0 top-0 -bottom-[250px] bg-[url('/bg-gradient.png')] bg-cover bg-top bg-no-repeat z-0"
+        aria-hidden="true"
+      />
+
       {/* 3D Canvas — explicit style ensures it fills the viewport */}
       <Canvas
         style={{
@@ -12,7 +18,7 @@ export default function HeroSection() {
           left: 0,
           width: '100%',
           height: '100%',
-          zIndex: 0,
+          zIndex: 1,
         }}
         camera={{ position: [0, 6, 10], fov: 45 }}
         gl={{ alpha: true }}
