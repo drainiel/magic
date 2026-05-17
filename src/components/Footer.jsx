@@ -16,7 +16,7 @@ export default function Footer() {
       />
 
       {/* Content sits above the overlay */}
-      <div className="relative z-10 flex flex-col md:flex-row justify-between gap-6 md:gap-12">
+      <div className="relative z-10 flex flex-col md:flex-row justify-between gap-6 md:gap-12 max-w-6xl mx-auto w-full">
         {/* Left Section: Logo & Mission */}
         <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
           <img

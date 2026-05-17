@@ -6,14 +6,15 @@ export default function Header() {
     { label: 'Tv Shows', href: '#' },
     { label: 'Formazioni', href: '#' },
     { label: 'Artisti', href: '/artisti' },
-    { label: 'Contatti', href: '#' },
+    { label: 'Contatti', href: '/contatti' },
     { label: 'Rassegna Stampa', href: '#' },
   ]
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-transparent">
-      <div className="flex items-center justify-between px-8 md:px-12 py-6">
-        {/* Logo */}
+    <header className="fixed top-0 w-full z-50 bg-transparent px-8 md:px-12 py-6">
+      <div className="max-w-6xl mx-auto w-full">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
         <Link to="/" className="flex-shrink-0 -my-9 relative z-10">
           <img src="/logo.png" alt="Logo" className="h-20 w-auto" />
         </Link>
@@ -40,6 +41,7 @@ export default function Header() {
             )
           )}
         </nav>
+        </div>
       </div>
     </header>
   )

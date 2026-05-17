@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection'
 import PhilosophySection from './components/PhilosophySection'
 import Footer from './components/Footer'
 import Artisti from './components/Artisti'
+import Contact from './components/Contact'
 
 function HomePage() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/artisti" element={<Artisti />} />
+        <Route path="/contatti" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   )
