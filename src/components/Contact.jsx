@@ -33,8 +33,19 @@ export default function Contact() {
             }
         }
 
+        const handleTouchStart = (event) => {
+            // On mobile: single finger scrolls the page, two fingers interact with the 3D scene.
+            if (event.touches.length === 1) {
+                event.stopPropagation()
+            }
+        }
+
         el.addEventListener('wheel', handleWheel, { capture: true })
-        return () => el.removeEventListener('wheel', handleWheel, { capture: true })
+        el.addEventListener('touchstart', handleTouchStart, { capture: true })
+        return () => {
+            el.removeEventListener('wheel', handleWheel, { capture: true })
+            el.removeEventListener('touchstart', handleTouchStart, { capture: true })
+        }
     }, [])
 
     return (
