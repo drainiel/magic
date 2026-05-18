@@ -88,7 +88,8 @@ export default function Contact() {
                     <img
                         src="/down_arrow.png"
                         alt="Scroll down"
-                        className="mt-6 h-12 w-auto animate-[bounce-slow_2s_ease-in-out_infinite]"
+                        className="mt-6 h-12 w-auto animate-[bounce-slow_2s_ease-in-out_infinite] cursor-pointer pointer-events-auto"
+                        onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
                     />
                 </div>
             </section>
@@ -138,7 +139,7 @@ export default function Contact() {
                             onChange={(e) => handleChange('messaggio', e.target.value)}
                         />
 
-                        <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-10 mt-8">
+                        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 mt-8">
                             <Button
                                 label="Iscriviti alla newsletter"
                                 variant="solid"

@@ -71,7 +71,8 @@ export default function HeroSection() {
         <img
           src="/down_arrow.png"
           alt="Scroll down"
-          className="mt-6 h-12 w-auto animate-[bounce-slow_2s_ease-in-out_infinite]"
+          className="mt-6 h-12 w-auto animate-[bounce-slow_2s_ease-in-out_infinite] cursor-pointer pointer-events-auto"
+          onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
         />
       </div>
     </section>
