@@ -30,7 +30,7 @@ export default function ServiceCard({ number, title, description, image }) {
             <img
               src={image}
               alt={title}
-              className="w-full aspect-square object-cover rounded-xl"
+              className="w-48 h-48 mx-auto object-cover rounded-xl"
             />
           </div>
         </div>

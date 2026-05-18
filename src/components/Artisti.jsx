@@ -83,9 +83,9 @@ export default function Artisti() {
               >
                 <div className="relative w-full aspect-[3/3.5]">
                   <img
-                    src={shinLim}
+                    src={walter}
                     alt={artist.name}
-                    className="absolute inset-0 w-full h-full object-cover object-bottom"
+                    className="absolute inset-x-0 bottom-0 w-full h-[95%] object-contain object-bottom"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <span className="font-serif text-white text-xl md:text-2xl">
