@@ -77,7 +77,7 @@ export default function Contact() {
                 <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-8 md:px-12 pointer-events-none">
                     <h1 className="text-white text-5xl md:text-7xl lg:text-8xl text-center drop-shadow-lg">
                         <span className="block font-serif">
-                            get in <span className="italic bg-gradient-to-r from-[#113B97] to-[#BFEEFF] bg-clip-text text-transparent">touch</span>
+                            Get in <span className="italic bg-gradient-to-r from-[#113B97] to-[#BFEEFF] bg-clip-text text-transparent">touch</span>
                         </span>
                     </h1>
 
@@ -143,12 +143,12 @@ export default function Contact() {
                             <Button
                                 label="Iscriviti alla newsletter"
                                 variant="solid"
-                                onClick={() => {}}
+                                onClick={() => { }}
                             />
                             <Button
                                 label="Invia messaggio"
                                 variant="primary"
-                                onClick={() => {}}
+                                onClick={() => { }}
                             />
                         </div>
                     </form>

@@ -35,7 +35,7 @@ export default function PhilosophySection() {
   return (
     <section
       ref={ref}
-      className="min-h-screen pt-16 pb-24 px-8 md:px-12 w-full bg-black"
+      className="pt-16 pb-30 px-8 md:px-12 w-full bg-black"
     >
       <div className="max-w-6xl mx-auto w-full text-left">
         <p className="font-serif text-white text-lg md:text-2xl mt-4">

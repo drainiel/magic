@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import PhilosophySection from './components/PhilosophySection'
+import Servizi from './components/Servizi'
 import Footer from './components/Footer'
 import Artisti from './components/Artisti'
 import Contact from './components/Contact'
@@ -12,6 +13,7 @@ function HomePage() {
       <Header />
       <HeroSection />
       <PhilosophySection />
+      <Servizi />
       <Footer />
     </div>
   )
